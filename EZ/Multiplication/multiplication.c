@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<time.h>
 
 int main()
 {
@@ -7,7 +8,7 @@ int main()
 	FILE * fileOut;
 	int i, j, num;
 	char buff[50]={}, inName[50]={}, outName[50]={};
-
+    srand(time(NULL));
 	for(i = 1; i <= 20; i++)
 	{
 		sprintf(inName, "%d.in", i);
@@ -16,7 +17,7 @@ int main()
 		fileIn = fopen(inName, "w");
 		fileOut = fopen(outName, "w");
 
-        srand(12345);
+
 		num = (rand() * rand()) % 100001;
 
 		fprintf(fileIn, "%d", num);
