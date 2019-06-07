@@ -9,13 +9,13 @@ def gcd(a, b):
 inp = open("4.in", "w")
 ans = open("4.sol", "w")
 
-randed = random.randint(100000,100000000)
+randed = random.randint(1000000,100000000)
 
-multi = random.randint(0,math.floor(100000000/randed))
+multi = random.randint(1,math.floor(100000000/randed))
 num1 = multi*randed
 inp.write(str(num1) + "\n")
 
-multi = random.randint(0,math.floor(100000000/randed))
+multi = random.randint(1,math.floor(100000000/randed))
 num2 = multi*randed
 inp.write(str(num2))
 
